@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>calcular la edad</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<h1>Calcular la edad de una de una persona </h1>
+<button onclick = "calcularEdad()"> calcular edad </button>
+<p id="resultado"></p>
+
+
+<script>
+function calcularEdad(){
+
+
+const nacimiento = prompt("ingrese el año en el que nacio: "); const actual = prompt("ingrese el año actual: ");
+
+const formula = parseFloat(actual) - parseFloat(nacimiento);
+
+
+document.getElementById("resultado").innerText = `Su edad es: ${formula}`;
+
+
+}
+</script>
+</body>
+</html>
+
+
+
+

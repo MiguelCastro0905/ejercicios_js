@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>calcular interes</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+ 
+<body>
+<h1>Bienvenidos al banco ColombiaFlash</h1>
+<h2>Con este simulador te mostraremos lo que te cobraremos por un prestamo con Nuestro banco</h2>
+<button onclick = "interes()"> calcular interes a depositar </button>
+<p id="resultado"></p>
+<p id = "resultadoUs"></p>
+
+
+<script>
+function interes(){
+
+
+const prestamo = prompt("ingrese el valor del prestamo: "); const porcentaje = prompt("ingrese el porcentaje a calcular: ");
+
+
+
+const interesPagarUS= parseFloat(prestamo) * parseFloat(porcentaje) / 100 /4400; const interesPagarCop = parseFloat(prestamo) * parseFloat(porcentaje) / 100;
+
+document.getElementById("resultado").innerText = `el valor de interes a pagar es:
+${interesPagarUS} dolares`;
+document.getElementById("resultadoUs").innerText = `el valor de interes a pagar es: ${interesPagarCop} Cop `;
+}
+</script>
+</body>
+</html>
+
+
